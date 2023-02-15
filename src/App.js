@@ -9,6 +9,8 @@ import Settings from "./pages/Settings";
 import { db } from "./backend/app_backend";
 import "./autoload";
 
+// 10 - bea
+
 function App() {
   let homePageSeen = db.get("HOME_PAGE_SEEN");
   let DEFAULT_ROUTE_PAGE;
