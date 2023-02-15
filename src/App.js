@@ -16,6 +16,7 @@ function App() {
     ? (DEFAULT_ROUTE_PAGE = <WeatherApp />)
     : (DEFAULT_ROUTE_PAGE = <Home />);
 
+ // "Pogi naman natin mga tito"
   return (
     <BrowserRouter>
       <Routes>
