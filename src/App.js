@@ -13,13 +13,11 @@ import "./autoload";
 
 function App() {
   let homePageSeen = db.get("HOME_PAGE_SEEN");
-  console.log(homePageSeen)
   let DEFAULT_ROUTE_PAGE;
   homePageSeen
     ? (DEFAULT_ROUTE_PAGE = <WeatherApp />)
     : (DEFAULT_ROUTE_PAGE = <Home />);
 
- // "Pogi naman natin mga tito"
   return (
     <BrowserRouter>
       <Routes>
