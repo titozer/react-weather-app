@@ -9,16 +9,13 @@ import Settings from "./pages/Settings";
 import { db } from "./backend/app_backend";
 import "./autoload";
 
-// Main function - 05 08
 function App() {
   let homePageSeen = db.get("HOME_PAGE_SEEN");
-  console.log(homePageSeen)
   let DEFAULT_ROUTE_PAGE;
   homePageSeen
     ? (DEFAULT_ROUTE_PAGE = <WeatherApp />)
     : (DEFAULT_ROUTE_PAGE = <Home />);
 
- // "Pogi naman natin mga tito"
   return (
     <BrowserRouter>
       <Routes>
