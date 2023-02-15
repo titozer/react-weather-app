@@ -9,7 +9,7 @@ import Settings from "./pages/Settings";
 import { db } from "./backend/app_backend";
 import "./autoload";
 
-// Bea - 9
+// Bea - 9 - features?
 function App() {
   let homePageSeen = db.get("HOME_PAGE_SEEN");
   console.log(homePageSeen)
